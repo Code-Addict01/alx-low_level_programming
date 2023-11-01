@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
- * @n: number to be evaluated
+ * @i: number to be evaluated
  * Return: 1 and print + for n > 0
  *	0 and print 0 for n == 0
  *	-1 and print - for n < 0
