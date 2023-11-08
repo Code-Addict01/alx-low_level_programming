@@ -13,7 +13,7 @@ void print_rev(char *s)
 		len = index;
 	}
 
-	while (s[len] != '\0')
+	while (len >= 0)
 	{
 		if (s == NULL || *s == '\0')
 			return;
