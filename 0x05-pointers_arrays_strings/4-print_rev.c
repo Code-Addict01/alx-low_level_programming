@@ -13,6 +13,11 @@ void print_rev(char *s)
 		len = index;
 	}
 
+	if (len == '\0')
+	{
+		_putchar('\n');
+	}
+
 	while (s[len] != '\0')
 	{
 		_putchar(*(s + len));
