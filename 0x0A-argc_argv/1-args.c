@@ -9,6 +9,7 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 	int index;
+
 	if (argc > 0)
 	{
 		index = argc - 1;
