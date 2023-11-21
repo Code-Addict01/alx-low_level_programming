@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int element, coins = 0, amt;
+	int element, cents = 0, amt;
 	int values[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -22,15 +22,16 @@ int main(int argc, char *argv[])
 	if (amt < 0)
 	{
 		printf("0\n");
+		return (1);
 	}
 
 	for (element = 0; element < 5; element++)
 	{
-		coins += amt / values[element];
+		cents += amt / values[element];
 		amt %= values[element];
 	}
 
-	printf("%d\n", coins);
+	printf("%d\n", cents);
 
 	return (0);
 }
