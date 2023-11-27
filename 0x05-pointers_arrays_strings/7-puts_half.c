@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * puts_half - prints half a string followed bt a new line
- * @str: pointer to string
+ * puts_half - prints halft the string, followed by a new line
+ * @str: pointer to the string
  */
 void puts_half(char *str)
 {
@@ -14,12 +14,24 @@ void puts_half(char *str)
 		index++;
 	}
 
-	n = index / 2;
-	while (n < index)
+	if (index % 2 == 0)
 	{
-		_putchar(str[n]);
-		n++;
+		n = index / 2;
+		while (n < index)
+		{
+			_putchar(str[n]);
+			n++;
+		}
 	}
+	else if (index % 2 != 0)
+	{
+		n = (index - 1) / 2;
+		while (n < index)
+		{
+			_putchar(str[n]);
+			n++;
+		}
 
+	}
 	_putchar('\n');
 }
