@@ -2,20 +2,19 @@
 
 /**
  * puts2 - prints every other character of a string,
- * starting with the first character, followe by a new line
- * @str: pointer to a string
+ * starting with the first character followed by new line.
+ * @str: pointer to the string of characters
  */
 void puts2(char *str)
 {
-	int index, mod;
+	int index;
 
-	index = 0;
-	while (str[index] != '\0')
+	for (index = 0; str[index] != '\0'; index++)
 	{
-		mod = str[index] % 2;
-		if (!(mod != 0))
+		if (index % 2 == 0)
+		{
 			_putchar(str[index]);
-		index++;
+		}
 	}
 	_putchar('\n');
 }
