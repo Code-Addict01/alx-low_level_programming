@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print-diagonal - prints a diagonal lien on the terminal
+ * print_diagonal - prints a diagonal lien on the terminal
  * @n: number of times \ should be printed
  */
 void print_diagonal(int n)
