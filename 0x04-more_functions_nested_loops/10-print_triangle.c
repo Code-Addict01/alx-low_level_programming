@@ -9,7 +9,8 @@ void print_triangle(int size)
 	int i, j, k;
 
 	if (size <= 0)
-		return;
+		_putchar('\n');
+
 
 	for (i = 0; i < size; i++)
 	{
