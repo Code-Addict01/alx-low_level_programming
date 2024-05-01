@@ -8,12 +8,13 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int index;
+	int i;
 
-	if (argc > 0)
-	{
-		index = argc - 1;
-		printf("%d\n", index++);
-	}
+	argc -= 1;
+
+	for (i = 0; i < argc; i++)
+		;
+	printf("%d\n", i);
+
 	return (0);
 }
