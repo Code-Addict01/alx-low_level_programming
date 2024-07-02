@@ -33,6 +33,7 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 
+
 /**
  * op_div - returns quotient of a divided by b
  * @a: The dividend
