@@ -28,7 +28,10 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", f(num1, num2));
+	if (f)
+	{
+		printf("%d\n", f(num1, num2));
+	}
 
 	return (0);
 }
