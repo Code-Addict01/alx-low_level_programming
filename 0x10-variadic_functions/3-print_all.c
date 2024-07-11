@@ -53,7 +53,8 @@ void print_all(const char * const format, ...)
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
-		{'s', print_str}
+		{'s', print_str},
+		{'\0', NULL}
 	};
 
 	va_start(ap, format);
@@ -61,7 +62,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (t_fn[j].func_ptr)
+		while (t_fn[j].specifier)
 		{
 			if (format[i] == t_fn[j].specifier)
 			{
