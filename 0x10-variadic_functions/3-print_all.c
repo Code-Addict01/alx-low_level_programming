@@ -48,7 +48,7 @@ void print_str(va_list ap)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i, j, c = 0;
+	unsigned int i, j, c = 0, size;
 	format_args t_fn[] = {
 		{'c', print_char},
 		{'i', print_int},
@@ -56,13 +56,14 @@ void print_all(const char * const format, ...)
 		{'s', print_str},
 		{'\0', NULL}
 	};
+	size = sizeof(t_fn) / sizeof(t_fn[0]);
 
 	va_start(ap, format);
 	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
-		while (t_fn[j].specifier)
+		while (j < size)
 		{
 			if (format[i] == t_fn[j].specifier)
 			{
