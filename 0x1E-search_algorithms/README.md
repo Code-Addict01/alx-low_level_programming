@@ -8,5 +8,5 @@
 - [x]  What is a binary search
 - [x]  What is the best seach algorithm to use depending on your needs
 
-----------alxsoftware engineering----------
----------------#DoHardThings---------------
+- ----------alxsoftware engineering----------
+- ==============#DoHardThings================
