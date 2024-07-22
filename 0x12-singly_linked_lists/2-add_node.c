@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node - adds new node at the beginning of a list_t list
- * @head: pointer to a pointer to a head node
+ * add_node - adds a new node at the beginning of a list_t list
+ * @head: pointer to pointer to head node
  * @str: pointer to a string
- * Return: address of the new_node formed
+ * Return: address of new node added, NULL if add failed
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -17,11 +17,11 @@ list_t *add_node(list_t **head, const char *str)
 	if (str)
 		new_node->str = strdup(str);
 
-	for (len = 0; new_node->str; len++)
+	for (len = 0; new_node->str[len]; len++)
 		;
 	new_node->len = len;
 	new_node->next = *head;
 	*head = new_node;
 
-	return (*head);
+	return (new_node);
 }
