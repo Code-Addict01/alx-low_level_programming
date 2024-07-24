@@ -20,3 +20,4 @@ This repository consists of all I have learn't in the alx c programming sprint.
 16. 0x10. C - variadic_functions
 17. 0x11. C - printf
 18. 0x12. C - Singly linked lists
+20. 0x14. C - Bit manipulation
