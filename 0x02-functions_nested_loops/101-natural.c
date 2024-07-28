@@ -13,13 +13,13 @@ int main(void)
 
 	for (i = 1; i <= 1024; i++)
 	{
-		if (i % 3)
+		if (i % 3 == 0)
 			sum3 += i;
 
-		if (i % 5)
+		if (i % 5 == 0)
 			sum5 += i;
 
-		if (i % 15)
+		if (i % 15 == 0)
 			sum15 += i;
 	}
 	t_sum = sum3 + sum5 - sum15;
