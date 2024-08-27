@@ -20,4 +20,5 @@
 18. [0x12-singly_linked_lists](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x12-singly_linked_lists)
 19. [0x14-bit_manipulation](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x14-bit_manipulation)
 20. [0x15-file_io](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x15-file_io)
-21. [0x1E-search_algorithms](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x1E-search_algorithms)
+21. [0x1C-makefiles](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x1C-makefiles)
+22. [0x1E-search_algorithms](https://github.com/Code-Addict01/alx-low_level_programming/tree/master/0x1E-search_algorithms)
