@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define function that measures perimeter of island"""
 
+
 def island_perimeter(grid):
     """Grid represents water with 0 and land with 1
 
